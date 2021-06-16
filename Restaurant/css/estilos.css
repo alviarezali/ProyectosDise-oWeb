@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-size: 16px; }
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+/*----------- HEADER ----------------- */
+header {
+  width: 100%;
+  background: url("../img/bg.jpg") #281a0c;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0; }
+
+header .container {
+  position: relative;
+  height: 700px; }
+
+header .menu {
+  width: 100%;
+  text-align: right; }
+  header .menu a {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 300;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+    border-bottom: 1px solid transparent; }
+    header .menu a:hover {
+      border-bottom: 1px solid #fff; }
+header .texts {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -52px; }
+  header .texts .name {
+    font-size: 3.13rem;
+    font-weight: 600; }
+    header .texts .name span {
+      font-weight: 300; }
+  header .texts h3 {
+    font-weight: 300;
+    font-size: 1.56rem;
+    font-style: italic; }
+
+/*-----------MAIN----------------- */
+.main {
+  background: url("../img/bg-textura.png");
+  background-repeat: repeat; }
+  .main .about-us .container {
+    overflow: visible;
+    position: relative; }
+    .main .about-us .container .photo {
+      width: 80%;
+      position: absolute;
+      left: 0;
+      top: -50px;
+      z-index: 0;
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35); }
+      .main .about-us .container .photo img {
+        vertical-align: top;
+        width: 100%; }
+    .main .about-us .container article {
+      background: #fff;
+      padding: 40px;
+      width: 50%;
+      position: relative;
+      top: 200px;
+      z-index: 1;
+      float: right;
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35); }
+      .main .about-us .container article h3 {
+        font-size: 3.13rem;
+        font-weight: 300;
+        margin-bottom: 40px; }
+      .main .about-us .container article p {
+        text-align: justify;
+        text-indent: 15px;
+        line-height: 28px;
+        margin-bottom: 15px; }
+  .main .menu {
+    padding-top: 530px;
+    margin-bottom: 50px; }
+    .main .menu .title {
+      font-size: 2.5rem;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 40px; }
+    .main .menu .container-menu,
+    .main .menu .container-menu2 {
+      border: 1px solid #000;
+      background: transparent;
+      padding: 10px;
+      overflow: hidden; }
+      .main .menu .container-menu article,
+      .main .menu .container-menu2 article {
+        width: 50%;
+        float: left;
+        padding: 20px; }
+        .main .menu .container-menu article .category,
+        .main .menu .container-menu2 article .category {
+          font-size: 1.38rem;
+          font-weight: 700;
+          margin-bottom: 40px;
+          text-align: center; }
+        .main .menu .container-menu article .platter,
+        .main .menu .container-menu2 article .platter {
+          margin-bottom: 30px;
+          padding-bottom: 20px;
+          border-bottom: 4px dotted #000;
+          overflow: hidden; }
+          .main .menu .container-menu article .platter .name,
+          .main .menu .container-menu2 article .platter .name {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            float: left; }
+          .main .menu .container-menu article .platter .price,
+          .main .menu .container-menu2 article .platter .price {
+            font-size: 1.25rem;
+            margin-botom: 15px;
+            float: right; }
+          .main .menu .container-menu article .platter .description,
+          .main .menu .container-menu2 article .platter .description {
+            font-size: 1rem;
+            color: #676767;
+            clear: both; }
+  .main .gallery {
+    overflow: hidden; }
+    .main .gallery .photo {
+      width: 25%;
+      float: left; }
+      .main .gallery .photo img {
+        width: 100%;
+        vertical-align: top;
+        opacity: 0.7; }
+        .main .gallery .photo img:hover {
+          opacity: 1;
+          transition: all 0.4s ease; }
+  .main .location {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 60px 0;
+    overflow: hidden; }
+    .main .location .title {
+      text-align: center;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      font-weight: 300;
+      margin-bottom: 2.5rem; }
+    .main .location .direction {
+      float: left;
+      width: 50%;
+      text-align: left; }
+      .main .location .direction .street {
+        margin-bottom: 15px; }
+    .main .location .schedules {
+      float: right;
+      width: 50%;
+      text-align: right;
+      overflow: hidden; }
+      .main .location .schedules h4 {
+        text-align: center;
+        margin-bottom: 20px; }
+      .main .location .schedules .weeks, .main .location .schedules .weekend {
+        width: 50%;
+        float: left;
+        text-align: center; }
+  .main .map {
+    width: 100%;
+    overflow: hidden; }
+    .main .map iframe {
+      width: 100%;
+      max-height: 600px; }
+
+/*-----------FOOTER----------------- */
+footer {
+  background: #000; }
+  footer .copyright {
+    text-align: center;
+    padding: 15px 0;
+    color: #fff; }
+
+/*-----------MEDIA QUERIES----------------- */
+@media screen and (max-width: 800px) {
+  header .container {
+    position: static;
+    height: auto; }
+  header .texts {
+    position: static;
+    margin: 100px 0; }
+    header .texts .name {
+      font-size: 1.88rem; }
+    header .texts h3 {
+      font-size: 1.13rem; }
+  header .menu {
+    text-align: center; }
+    header .menu a {
+      margin: 20px 20px; }
+
+  .main .about-us .container .photo {
+    width: 100%;
+    position: relative; }
+  .main .about-us .container article {
+    position: relative;
+    width: 100%;
+    top: -50px;
+    transform: translate(0px, 0); }
+  .main .menu {
+    padding-top: 300px; }
+    .main .menu .container-menu article {
+      width: 100%; }
+  .main .gallery .photo {
+    width: 50%; } }
+@media screen and (max-width: 500px) {
+  .main .about-us .container article h3 {
+    font-size: 34px;
+    margin-bottom: 10px; }
+  .main .menu .container .container-menu .container-menu2 article .platter .name, .main .menu .container .container-menu .container-menu2 article .platter .price {
+    font-size: 16px;
+    line-height: 16px; }
+  .main .location .direction {
+    margin-bottom: 15px; }
+  .main .location .direction, .main .location .schedules {
+    width: 100%;
+    text-align: center; } }
+
+/*# sourceMappingURL=estilos.css.map */
